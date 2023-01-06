@@ -1,7 +1,5 @@
-// Não posso importar aqui!
-// O import foi feito dentro de _app.jsx;
 
-export default function integracao1() {
+export default function integracao2() {
     return (
         <div className="integracao1">
             <div className="vermelho">Texto #01</div>

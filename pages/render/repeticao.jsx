@@ -3,13 +3,15 @@ export default function Repeticao1() {
     const liastaAprovados = ["João", "Maria", "Ana", "Bia", "Carlos", "Daniel", "Laura"];
 
     function renderizarLista() {
-        return (
-            <>
-                <li>Elemento #01</li>
-                <li>Elemento #02</li>
-                <li>Elemento #03</li>            
-            </>
-        )
+
+        const itens = [];
+
+        for (let i = 0; i < liastaAprovados.length; i++) {
+            itens.push(<li key={i}>{liastaAprovados[i]}</li>)
+            
+        }
+        
+        return itens;
     }
 
     return(

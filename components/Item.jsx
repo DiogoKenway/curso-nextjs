@@ -1,4 +1,4 @@
-export default function Lista(props) {
+export default function Item(props) {
     return (
         <li>{props.conteudo}</li>
     )

@@ -1,4 +1,4 @@
-class Produto {
+export default class Produto {
     #id;
     #nome;
     #preco;
@@ -10,7 +10,7 @@ class Produto {
     }
 
     get id() {
-        return this.#id;
+        return this.#id
     }
 
     get nome() {

@@ -8,6 +8,10 @@ export default function Botao() {
         console.log("acao2");
     }
 
+    function acao5(e) {
+        console.log(e);
+    }
+
     return (
         <>
             <button onClick={acao1}>Click #01</button>
@@ -16,6 +20,9 @@ export default function Botao() {
                 console.log("acao3")
             }}>Click #03</button>
             <button onClick={() => console.log("acao4")}>Click #04</button>
+            <button onClick={acao5}>Click #05</button>
+            <button onClick={e => acao5(e.altKey)}>Click #05 v2</button>
+            <input type="text" onChange={e => console.log(e.target.value)}/>
         </>
     )
 }

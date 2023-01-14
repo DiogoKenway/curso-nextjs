@@ -11,7 +11,7 @@ export default function formulario() {
     return (
         <div style={{display: "flex",
             flexDirection: "column",
-            width: "400px"}}>
+            width: "400px"}}> 
             <input type="text" value={valor} 
                 onChange={e => setValor(e.target.value)} />
                 <span>{valor}</span>

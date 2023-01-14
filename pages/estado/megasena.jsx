@@ -26,7 +26,7 @@ export default function megasena() {
                 min={6}
                 max={20}
                 value={qtde}
-                onChange={e => setQtde(e.target.value)} />
+                onChange={e => setQtde(+e.target.value)} />
             <button onClick={() => setNumeros(mega(qtde))}>
                 Gerar Aposta
             </button>

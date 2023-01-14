@@ -17,5 +17,6 @@ export default function formulario() {
                 <span>{valor}</span>
             <button onClick={alterarInput}>Alterar</button>
         </div>
+        
     )
 }

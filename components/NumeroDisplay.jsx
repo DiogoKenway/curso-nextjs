@@ -1,4 +1,4 @@
-export default function NumeroDisplay({ count }) {
+export default function NumeroDisplay({ numero }) {
     return (
         <div style={{
             display: "flex",
@@ -9,9 +9,10 @@ export default function NumeroDisplay({ count }) {
             fontSize: "2.5rem",
             borderRadius: "100%",
             background: "#323",
-            color: "#f1f1f1"
+            color: "#f1f1f1",
+            margin: "2rem 0"
         }}>
-            {count}
+            {numero}
         </div>
     )
 } 

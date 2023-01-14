@@ -3,7 +3,7 @@ import NumeroDisplay from "../../components/NumeroDisplay"
 
 export default function contador() {
 
-    const [count, setCount] = useState(0)
+    const [numero, setNumero] = useState(0)
 
     return (
         <div style={{ 
@@ -13,10 +13,10 @@ export default function contador() {
             alignItems: "center",
             gap: "16px" }}>
             <h1>Contador</h1>
-            <NumeroDisplay count={count}/>
+            <NumeroDisplay numero={numero}/>
             <div>
-                <button onClick={() => setCount(count - 1)}>-</button>
-                <button onClick={() => setCount(count + 1)}>+</button>
+                <button onClick={() => setNumero(numero - 1)}>-</button>
+                <button onClick={() => setNumero(numero + 1)}>+</button>
             </div>
         </div>
     )

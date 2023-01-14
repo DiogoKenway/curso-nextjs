@@ -1,4 +1,4 @@
-export default function ContadorDisplay({ count }) {
+export default function NumeroDisplay({ count }) {
     return (
         <div style={{
             display: "flex",

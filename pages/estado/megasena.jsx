@@ -4,7 +4,8 @@ import NumeroDisplay from "../../components/NumeroDisplay";
 
 export default function megasena() {
 
-    const [numeros, setNumeros] = useState(mega());
+    const [qtde, setQtde] = useState(6);
+    const [numeros, setNumeros] = useState([]);
 
     const renderNumeros = () => (
         numeros.map(numero => <NumeroDisplay key={numero} numero={numero} />)
@@ -13,15 +14,20 @@ export default function megasena() {
 
     return (
         <div style={{display: "flex",
-             justifyContent: "space-around",
              alignItems: "center",
              flexDirection: "column"}}>
             <h1>Mega Sena</h1>
-            <div style={{ display: "flex", gap: "16px" }}>
+            <div style={{ display: "flex", 
+                gap: "16px",
+                flexWrap: "wrap" }}>
                 {renderNumeros()}
             </div>
-            <input type="number" min={6} max={20} />
-            <button onClick={() => setNumeros(mega())}>
+            <input type="number"
+                min={6}
+                max={20}
+                value={qtde}
+                onChange={e => setQtde(e.target.value)} />
+            <button onClick={() => setNumeros(mega(qtde))}>
                 Gerar Aposta
             </button>
         </div>

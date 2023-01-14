@@ -5,7 +5,7 @@ export default function formulario() {
     const [valor, setValor] = useState("")
 
     function alterarInput() {
-        setValor(valor + "!")
+        setValor(valor + "!") 
     }
 
     return (
